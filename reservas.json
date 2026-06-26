@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "id_libro": 3,
+        "id_socio": 2,
+        "fecha_reserva": "2026-04-01",
+        "estado": "cumplida"
+    },
+    {
+        "id": 2,
+        "id_libro": 6,
+        "id_socio": 4,
+        "fecha_reserva": "2026-05-10",
+        "estado": "cancelada"
+    },
+    {
+        "id": 3,
+        "id_libro": 2,
+        "id_socio": 5,
+        "fecha_reserva": "2026-06-12",
+        "estado": "en espera"
+    },
+    {
+        "id": 4,
+        "id_libro": 5,
+        "id_socio": 3,
+        "fecha_reserva": "2026-06-08",
+        "estado": "en espera"
+    }
+]

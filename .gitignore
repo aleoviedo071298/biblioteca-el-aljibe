@@ -1,0 +1,18 @@
+# Archivos comprimidos de entrega
+*.rar
+*.zip
+*.tar.gz
+
+# PDFs de consignas (no son parte del código)
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/

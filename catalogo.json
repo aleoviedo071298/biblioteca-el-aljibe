@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "titulo": "Cien a\u00f1os de soledad",
+        "autor": "Gabriel Garc\u00eda M\u00e1rquez",
+        "genero": "novela",
+        "anio_publicacion": 1967,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 2,
+        "titulo": "Rayuela",
+        "autor": "Julio Cort\u00e1zar",
+        "genero": "novela",
+        "anio_publicacion": 1963,
+        "estado": "prestado",
+        "procedencia": "compra"
+    },
+    {
+        "id": 3,
+        "titulo": "Ficciones",
+        "autor": "Jorge Luis Borges",
+        "genero": "cuento",
+        "anio_publicacion": 1944,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 4,
+        "titulo": "Pedro P\u00e1ramo",
+        "autor": "Juan Rulfo",
+        "genero": "novela",
+        "anio_publicacion": 1955,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 5,
+        "titulo": "El t\u00fanel",
+        "autor": "Ernesto S\u00e1bato",
+        "genero": "novela",
+        "anio_publicacion": 1948,
+        "estado": "prestado",
+        "procedencia": "compra"
+    },
+    {
+        "id": 6,
+        "titulo": "Mart\u00edn Fierro",
+        "autor": "Jos\u00e9 Hern\u00e1ndez",
+        "genero": "novela",
+        "anio_publicacion": 1872,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 7,
+        "titulo": "La invenci\u00f3n de Morel",
+        "autor": "Adolfo Bioy Casares",
+        "genero": "novela",
+        "anio_publicacion": 1940,
+        "estado": "en reparaci\u00f3n",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 8,
+        "titulo": "Mafalda - Tira 1",
+        "autor": "Quino",
+        "genero": "infantil",
+        "anio_publicacion": 1964,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 9,
+        "titulo": "Don Segundo Sombra",
+        "autor": "Ricardo G\u00fciraldes",
+        "genero": "novela",
+        "anio_publicacion": 1926,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    },
+    {
+        "id": 10,
+        "titulo": "Sobre h\u00e9roes y tumbas",
+        "autor": "Ernesto S\u00e1bato",
+        "genero": "novela",
+        "anio_publicacion": 1961,
+        "estado": "disponible",
+        "procedencia": "compra"
+    },
+    {
+        "id": 11,
+        "titulo": "El Aleph",
+        "autor": "Jorge Luis Borges",
+        "genero": "cuento",
+        "anio_publicacion": 1949,
+        "estado": "disponible",
+        "procedencia": "compra"
+    },
+    {
+        "id": 12,
+        "titulo": "Bestiario",
+        "autor": "Julio Cort\u00e1zar",
+        "genero": "cuento",
+        "anio_publicacion": 1951,
+        "estado": "disponible",
+        "procedencia": "donacion"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre_donante": "Escuela N\u00b04 Jos\u00e9 de San Mart\u00edn",
+        "contacto": "345-4987654",
+        "fecha_recepcion": "2026-04-10",
+        "cantidad_libros": 60,
+        "estado": "catalogada",
+        "observaciones": "Mayor\u00eda de literatura juvenil, en buen estado"
+    },
+    {
+        "id": 2,
+        "nombre_donante": "An\u00f3nima",
+        "contacto": "",
+        "fecha_recepcion": "2026-05-22",
+        "cantidad_libros": 12,
+        "estado": "recibida",
+        "observaciones": "Caja dejada en la puerta, sin nota"
+    },
+    {
+        "id": 3,
+        "nombre_donante": "Familia Sosa",
+        "contacto": "sosa.familia@mail.com",
+        "fecha_recepcion": "2026-03-15",
+        "cantidad_libros": 25,
+        "estado": "integrada",
+        "observaciones": "Herencia de la abuela, libros cl\u00e1sicos"
+    },
+    {
+        "id": 4,
+        "nombre_donante": "Marta Vergara",
+        "contacto": "345-4555000",
+        "fecha_recepcion": "2026-06-01",
+        "cantidad_libros": 5,
+        "estado": "recibida",
+        "observaciones": "Libros t\u00e9cnicos, falta revisar estado"
+    }
+]

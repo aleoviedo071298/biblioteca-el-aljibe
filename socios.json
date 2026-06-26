@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "dni": "30123456",
+        "nombre_completo": "Elsa Morales",
+        "telefono": "3454123456",
+        "email": "elsa@mail.com",
+        "fecha_alta": "2020-06-15",
+        "categoria": "jubilado"
+    },
+    {
+        "id": 2,
+        "dni": "35987654",
+        "nombre_completo": "Juan P\u00e9rez",
+        "telefono": "3454111222",
+        "email": "juan.perez@mail.com",
+        "fecha_alta": "2022-03-10",
+        "categoria": "general"
+    },
+    {
+        "id": 3,
+        "dni": "12345678",
+        "nombre_completo": "Marta R\u00edos",
+        "telefono": "3454223344",
+        "email": "marta.rios@mail.com",
+        "fecha_alta": "2018-09-01",
+        "categoria": "jubilado"
+    },
+    {
+        "id": 4,
+        "dni": "28765432",
+        "nombre_completo": "Carlos Gonz\u00e1lez",
+        "telefono": "3454556677",
+        "email": "carlos.g@mail.com",
+        "fecha_alta": "2023-11-20",
+        "categoria": "general"
+    },
+    {
+        "id": 5,
+        "dni": "42876543",
+        "nombre_completo": "Ana L\u00f3pez",
+        "telefono": "3454889900",
+        "email": "ana.lopez@mail.com",
+        "fecha_alta": "2025-02-14",
+        "categoria": "estudiante"
+    },
+    {
+        "id": 6,
+        "dni": "32567891",
+        "nombre_completo": "Pedro Sosa",
+        "telefono": "3454334455",
+        "email": "",
+        "fecha_alta": "2024-07-30",
+        "categoria": "general"
+    },
+    {
+        "id": 7,
+        "dni": "55123456",
+        "nombre_completo": "Luc\u00eda Fern\u00e1ndez",
+        "telefono": "3454778899",
+        "email": "lu.fernandez@mail.com",
+        "fecha_alta": "2025-04-05",
+        "categoria": "infantil"
+    },
+    {
+        "id": 8,
+        "dni": "14567890",
+        "nombre_completo": "Roberto D\u00edaz",
+        "telefono": "3454001122",
+        "email": "",
+        "fecha_alta": "2021-05-12",
+        "categoria": "jubilado"
+    },
+    {
+        "id": 9,
+        "dni": "38799191",
+        "nombre_completo": "OVIEDO ALEJANDRO",
+        "telefono": "2974040547",
+        "email": "@",
+        "fecha_alta": "2026-06-19",
+        "categoria": "infantil"
+    }
+]
