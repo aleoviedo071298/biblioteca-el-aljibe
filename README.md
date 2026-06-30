@@ -1,99 +1,108 @@
-# Biblioteca Popular "El Aljibe" — Sistema de Gestion
+# Biblioteca Popular "El Aljibe" — Management System
 
-Sistema de gestion integral para la Biblioteca Popular "El Aljibe", desarrollado como **Trabajo Final Integrador** de la asignatura **Programacion 1** de la **Tecnicatura Universitaria en Desarrollo Web** (UNER - Facultad de Ciencias de la Administracion, 1er cuatrimestre 2026).
+A management system for the Biblioteca Popular "El Aljibe", built as the Final
+Integrative Project for the **Programming 1** course of the Tecnicatura
+Universitaria en Desarrollo Web (UNER — Facultad de Ciencias de la Administración,
+1st semester 2026).
 
-## Sobre la asignatura
+## About the Course
 
-**Programacion 1** es la materia introductoria de programacion de la carrera. Cubre los fundamentos del desarrollo de software en Python: variables, estructuras de control, funciones, estructuras de datos (listas, diccionarios, tuplas), manejo de archivos JSON y modularizacion del codigo.
+Programming 1 is the introductory programming course of the degree. It covers the
+fundamentals of software development in Python: variables, control structures,
+functions, data structures (lists, dictionaries, tuples), JSON file handling, and
+code modularization.
 
-El trabajo final integrador busca que el alumno:
-- Ponga en practica todos los conocimientos adquiridos durante el cursado.
-- Tenga una experiencia cercana a desarrollar un programa real con requerimientos establecidos por un usuario.
-- Tome decisiones de diseno de un programa.
+The final integrative project asks students to put everything learned into
+practice, get close to building a real program against a client's requirements, and
+make their own design decisions.
 
-## Contexto del proyecto
+## Project Context
 
-La Biblioteca Popular "El Aljibe" es una biblioteca comunitaria fundada en 1962 en un pueblo de Entre Rios, a 40 km de Concordia. Con 3.200 libros y 480 socios activos, necesitaba reemplazar su sistema manual de cuadernos por una aplicacion digital que corriera localmente en la computadora de la biblioteca.
+Biblioteca Popular "El Aljibe" is a community library founded in 1962 in a small
+town in Entre Ríos, Argentina, 40 km from Concordia. With 3,200 books and 480 active
+members, it needed to replace its manual card-catalog system with a digital
+application running locally on the library's computer.
 
-El sistema fue desarrollado a partir de un **documento de requerimientos** redactado por la presidenta de la comision de la biblioteca, simulando un escenario real de desarrollo con un cliente.
+The system was built from a requirements document written by the library board's
+president, simulating a real development scenario with a client.
 
-## Funcionalidades
+## Features
 
-El sistema gestiona cinco modulos principales a traves de una interfaz de consola con menus interactivos:
+The system manages five core modules through an interactive console menu interface:
 
-### 1. Catalogo de libros
-- Alta, listado (con filtros por estado), busqueda (por titulo, autor o numero de inventario), cambio de estado y baja de libros.
-- Estados: disponible, prestado, en reparacion, dado de baja.
+### 1. Book Catalog
+- Add, list (with status filters), search (by title, author, or inventory number), change status, and remove books.
+- States: available, on loan, under repair, retired.
 
-### 2. Socios
-- Registro, listado, busqueda (por carnet, DNI o nombre), actualizacion de datos y baja.
-- Categorias: general, jubilado, estudiante, infantil.
-- Deteccion de socios inactivos (sin actividad en mas de 2 anios).
-- Al consultar un socio se muestra su historial de prestamos.
+### 2. Members
+- Register, list, search (by card number, ID, or name), update, and remove members.
+- Categories: general, retired, student, child.
+- Detection of inactive members (no activity in over 2 years).
+- Viewing a member shows their loan history.
 
-### 3. Prestamos
-- Registro de prestamos con cambio automatico del estado del libro a "prestado".
-- Visualizacion de prestamos activos e historial.
-- Busqueda por numero de inventario del libro o DNI del socio.
-- Registro de devolucion con cambio automatico del estado del libro a "disponible".
-- Al devolver, el sistema notifica si el libro tiene reservas pendientes.
+### 3. Loans
+- Register a loan, which automatically sets the book's status to "on loan".
+- View active loans and history.
+- Search by book inventory number or member ID.
+- Register a return, which automatically sets the book's status back to "available".
+- On return, the system flags any pending reservations for that book.
 
-### 4. Reservas
-- Registro de reservas para libros que no estan disponibles.
-- Listado de reservas activas, busqueda por libro o socio.
-- Marcado de reserva como cumplida (genera automaticamente un nuevo prestamo).
-- Cancelacion de reservas.
+### 4. Reservations
+- Reserve books that are currently unavailable.
+- List active reservations, search by book or member.
+- Mark a reservation as fulfilled (automatically creates a new loan).
+- Cancel reservations.
 
-### 5. Donaciones
-- Registro, listado, busqueda (por donante o fecha) y actualizacion de estado de procesamiento.
-- Estados: recibida, catalogada, integrada.
+### 5. Donations
+- Register, list, search (by donor or date), and update processing status.
+- States: received, cataloged, integrated.
 
-## Aspectos tecnicos
+## Technical Overview
 
-| Aspecto | Detalle |
+| Aspect | Detail |
 |---|---|
-| **Lenguaje** | Python 3 |
-| **Persistencia** | Archivos JSON (catalogo, socios, prestamos, reservas, donaciones) |
-| **Interfaz** | Consola (CLI) con menus interactivos |
-| **Dependencias externas** | Ninguna (solo libreria estandar: `json`, `datetime`, `os`) |
+| **Language** | Python 3 |
+| **Persistence** | JSON files (catalog, members, loans, reservations, donations) |
+| **Interface** | Console (CLI) with interactive menus |
+| **External dependencies** | None — standard library only (`json`, `datetime`, `os`) |
 
-### Estructura del proyecto
+### Project Structure
 
 ```
 biblioteca-el-aljibe/
-├── biblioteca.py        # Codigo fuente principal
-├── catalogo.json        # Datos del catalogo de libros
-├── socios.json          # Datos de socios registrados
-├── prestamos.json       # Datos de prestamos
-├── reservas.json        # Datos de reservas
-├── donaciones.json      # Datos de donaciones
+├── biblioteca.py        Main source code
+├── catalogo.json         Book catalog data
+├── socios.json            Registered members data
+├── prestamos.json         Loans data
+├── reservas.json          Reservations data
+├── donaciones.json        Donations data
 └── README.md
 ```
 
-### Decisiones de diseno
+### Design Decisions
 
-- **Funciones utilitarias reutilizables**: `buscar_por_id()`, `buscar_por_texto()`, `siguiente_id()`, `confirmar()`, `pedir_entero()`, `pedir_email()` evitan duplicacion de logica.
-- **Validacion de entrada**: los campos numericos solo aceptan digitos, los emails requieren `@`, y las acciones destructivas piden confirmacion.
-- **IDs autoincrementales**: cada entidad genera su proximo ID a partir del maximo existente.
-- **Integridad referencial automatica**: registrar un prestamo cambia el libro a "prestado"; devolver lo cambia a "disponible"; cumplir una reserva genera un prestamo automatico.
-- **Persistencia al salir**: los datos se guardan en archivos JSON al cerrar el sistema.
+- **Reusable utility functions**: `buscar_por_id()`, `buscar_por_texto()`, `siguiente_id()`, `confirmar()`, `pedir_entero()`, `pedir_email()` avoid duplicated logic.
+- **Input validation**: numeric fields only accept digits, emails require `@`, and destructive actions require confirmation.
+- **Auto-incrementing IDs**: each entity generates its next ID from the current maximum.
+- **Automatic referential integrity**: registering a loan sets the book to "on loan"; returning it sets it to "available"; fulfilling a reservation auto-creates a loan.
+- **Persistence on exit**: data is saved back to the JSON files when the program closes.
 
-## Como ejecutar
+## How to Run
 
 ```bash
 python biblioteca.py
 ```
 
-Requiere **Python 3.10+** (usa `match/case`).
+Requires **Python 3.10+** (uses `match/case`).
 
-## Pautas de evaluacion
+## Evaluation Criteria
 
-Segun las condiciones del trabajo integrador, se valoran:
-- **Exactitud**: que el programa cumpla con los requerimientos del documento.
-- **Eficiencia**: que las soluciones sean optimas y no redundantes.
-- **Prolijidad**: indentacion consistente y buenas practicas de codigo.
-- **Calidad de exposicion**: defensa oral del trabajo en coloquio.
+Per the integrative project guidelines, the following are assessed:
+- **Accuracy**: the program meets the requirements document.
+- **Efficiency**: solutions are optimal and non-redundant.
+- **Code quality**: consistent indentation and good practices.
+- **Presentation**: oral defense of the project.
 
 ---
 
-*Trabajo realizado para la Tecnicatura Universitaria en Desarrollo Web — UNER, Facultad de Ciencias de la Administracion (2026).*
+*Built for the Tecnicatura Universitaria en Desarrollo Web — UNER, Facultad de Ciencias de la Administración (2026).*
